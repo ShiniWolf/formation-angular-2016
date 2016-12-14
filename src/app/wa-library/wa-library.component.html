@@ -1,0 +1,12 @@
+<table>
+    <thead>
+    <tr>
+        <th>Titre</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="book in $ctrl.books track by $index">
+        <td>{{book.title}}</td>
+    </tr>
+    </tbody>
+</table>
