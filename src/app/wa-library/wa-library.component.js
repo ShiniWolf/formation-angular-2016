@@ -1,14 +1,12 @@
 import './wa-library.component.css';
 
 class WaLibraryController {
-  constructor () {
+  constructor (WaBooksService) {
+    this.WaBooksService = WaBooksService;
   }
 
   $onInit () {
-    this.books = [
-      { id: 1, title: 'La caverne maudite' },
-      { id: 2, title: 'Le royaume des singes' }
-    ]
+    this.books = this.WaBooksService.getBooks();
   }
 }
 
