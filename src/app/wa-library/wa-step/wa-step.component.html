@@ -1,0 +1,13 @@
+<h2>Chapitre {{$ctrl.step.id}}</h2>
+
+<p class="lead">{{$ctrl.step.story}}</p>
+
+<ul>
+    <li ng-repeat="move in $ctrl.step.moves track by $index" ng-click="$ctrl.changeStep(move)">
+        {{move.label}}
+    </li>
+</ul>
+
+<div ng-if="$ctrl.step.event && $ctrl.step.event.type == 'dice'">
+    <wa-dice sides="6" on-result="$ctrl.launchDice($event)"></wa-dice>
+</div>

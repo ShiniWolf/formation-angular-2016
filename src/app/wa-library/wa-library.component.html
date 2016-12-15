@@ -1,4 +1,8 @@
-<table>
+<h2>Liste des livres</h2>
+
+<a ng-href="/book-form" class="btn btn-primary">Ajouter</a>
+
+<table class="table">
     <thead>
     <tr>
         <th>Titre</th>
@@ -6,7 +10,7 @@
     </thead>
     <tbody>
     <tr ng-repeat="book in $ctrl.books track by $index">
-        <td>{{book.title}}</td>
+        <td><a ng-href="/book/{{book.id}}">{{book.title}}</a></td>
     </tr>
     </tbody>
 </table>

@@ -2,11 +2,15 @@ import './wa-library.component.css';
 
 class WaLibraryController {
   constructor (WaBooksService) {
+    'ngInject';
+
     this.WaBooksService = WaBooksService;
   }
 
   $onInit () {
-    this.books = this.WaBooksService.getBooks();
+    this.WaBooksService.getBooks().then((books) => {
+      this.books = books;
+    });
   }
 }
 

@@ -1,0 +1,10 @@
+<ol class="breadcrumb">
+    <li><a ng-href="/">Librairie</a></li>
+    <li class="active">{{$ctrl.book.title}}</li>
+</ol>
+
+<h2>{{$ctrl.book.title}}</h2>
+
+<p class="lead">{{$ctrl.book.description}}</p>
+
+<wa-step step="$ctrl.step" on-next-step="$ctrl.changeStep($event)"></wa-step>

@@ -1,0 +1,64 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "La caverne maudite",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare eros sed dignissim blandit. Ut erat velit, lobortis ac sem ac, facilisis rhoncus dolor. Nunc mauris mauris, commodo vel viverra eget, fringilla sed metus. Nulla pharetra dui sit amet massa tempor pellentesque. Nam molestie finibus tellus quis facilisis. Donec eget tempor augue. Cras bibendum est a quam fringilla auctor. Morbi elit neque, aliquam id metus id, blandit molestie lorem.",
+      "steps": [
+        {
+          "id": 1,
+          "story": "Vous êtes dans une salle plein de pièges. Une porte en face. Lancez un dé pour savoir si vous êtes chanceux.",
+          "moves": [
+            {
+              "step_id": 2,
+              "label": "Si vous faites 1, 2 ou 3, vous tombez dans un trou. Allez en 2.",
+              "condition": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "step_id": 3,
+              "label": "4,5,6 : Vous êtes passé ! Allez en 3.",
+              "condition": [
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "event": {
+            "type": "dice"
+          }
+        },
+        {
+          "id": 2,
+          "story": "Aïe ! Ouf, vous n'êtes pas mort. Remontez et repartez au 1.",
+          "moves": [
+            {
+              "step_id": 1,
+              "label": "Allez au 1"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "story": "Bravo, vous êtes sorti de la caverne !"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Le royaume des singes",
+      "description": "Donec in quam nulla. Aliquam gravida leo dignissim convallis condimentum. Praesent suscipit nunc ut augue viverra tempus. Nam lectus metus, elementum semper nisi ac, mollis faucibus leo. Mauris feugiat vel risus at molestie. Quisque rhoncus ligula molestie, placerat libero quis, tincidunt arcu. Aliquam viverra augue sit amet elit eleifend, in efficitur diam feugiat. Curabitur blandit leo imperdiet, sagittis ipsum ac, efficitur tellus.",
+      "steps": []
+    },
+    {
+      "id": 3,
+      "title": "Aventure en Finlandalousie",
+      "description": "",
+      "steps": []
+    }
+  ]
+}

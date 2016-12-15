@@ -1,0 +1,18 @@
+<ol class="breadcrumb">
+    <li><a ng-href="/">Librairie</a></li>
+    <li class="active">Ajouter un livre</li>
+</ol>
+
+<form name="bookForm" ng-submit="$ctrl.onSubmit(bookForm)" novalidate>
+    <div class="form-group">
+        <label for="title">Titre :</label>
+        <input type="text" name="title" id="title" class="form-control" ng-required="true" ng-model="$ctrl.book.title">
+    </div>
+    <div class="form-group">
+        <label for="description">Description :</label>
+        <textarea name="description" id="description" class="form-control" ng-required="true" ng-model="$ctrl.book.description"></textarea>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Valider</button>
+    </div>
+</form>
